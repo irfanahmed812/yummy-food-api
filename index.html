@@ -46,23 +46,36 @@
     <section>
         <!-- search-input, button -->
         <div class="container pt-3">
-            <div class="d-flex justify-content-center" role="search">
+            <div class="d-flex justify-content-end" role="search">
                 <!-- input field -->
-                <input id="input-field" class="form-control me-2 w-50" type="search" placeholder="Search for meals"
+                <input id="input-field" class="form-control me-2 w-auto" type="search" placeholder="Search for meals"
                     aria-label="Search">
                 <!-- search button -->
-                <button onclick="searchMeals()" class="btn btn-outline-dark" type="submit">Search</button>
+                <button id="submit" onclick="searchMeals()" class="btn btn-outline-dark" type="submit">Search</button>
             </div>
         </div>
 
-        <div class="text-danger text-center" id="error">Sorry!! Please enter some text inside input field</div>
+        <div class="text-start container pt-3">
+            <h4 class="text-black">Created by <a target="_blank"
+                    class="text-decoration-none bg-primary text-white rounded"
+                    href="https://www.facebook.com/irfanahmed812i">Irfan Ahmed</a></h4>
+        </div>
+
+        <!-- error -->
+        <div class="container pt-2 text-danger text-end" id="error">
+            <p>Sorry!!! Please enter some text inside input field</p>
+        </div>
+
+        <!-- searing is ........... -->
+        <div class="container text-center pt-2">
+            <div id="searching-id"></div>
+        </div>
 
         <!-- display meal details -->
-        <div class="container pt-3 pb-3">
-            <div id="meal-details" class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+        <div class="container pt-4 pb-4" id="meal-details">
 
-            </div>
         </div>
+
 
         <!-- display result -->
         <div class="container pt-3 pb-3">
